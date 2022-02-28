@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="mystyle_red_lake.css">
+        <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap' rel='stylesheet' type='text/css'>
+  
+  
+              <nav class="navbar" id="nav-bootstrap-overrides">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" id="link-override" href="index.html">Sadhana Ramaseshadri</a>
+                </div>
+                <ul class="nav navbar-nav" id="hover-nav-bootstrap-overrides">
+                  <li class="active"><a href="index.html">Work</a></li>
+                  <li><a id="link-override" href="about.html">About</a></li>
+                  <li><a id="link-override" href="resume.html">Resume</a></li>
+                </ul>
+              </div>
+            </nav>
+
+            <div class="header">
+                <div class="progress-container">
+                  <div class="progress-bar" id="myBar"></div>
+                </div>
+              </div>
+    
+              <script>
+                // When the user scrolls the page, execute myFunction 
+                window.onscroll = function() {myFunction()};
+                
+                function myFunction() {
+                  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                  var scrolled = (winScroll / height) * 100;
+                  document.getElementById("myBar").style.width = scrolled + "%";
+                }
+                </script>
+
+                <base href="move.html">
+    </head>
+    <body>
+        <div class='move-banner'>
+                <div class="move-intro">
+                  <h1 style="font-weight:700">Red Lake</h1>
+                  <h2>Really 'America's Worst Place to Live?'</h2>
+                  <p style="font-weight: 400;text-align:center; color:white;">In course SI 649 - Information Visualization, I created Interactive and Static data visualizations using data sets from <a target="_blank" style="color:white;text-decoration: underline;" href="https://opportunityinsights.org/paper/land-of-opportunity/">Harvard University's Equality of Opportunity Project</a> and <a target="_blank" style="color:white;text-decoration: underline;"href="https://www.bls.gov/lau/#:~:text=14%20months%20(TXT)%20(-,ZIP,-1%2C847KB)">the U.S. Bureau of Labor Statistics.</a></p>
+                </div>
+        </div>
+
+        <div class="section-container">
+            <div class="grid-container">
+                <p><mark class="hilight">Team:</mark><br>Individual</p>
+                <p><mark class="hilight">Duration:</mark><br>3 weeks</p>
+                <p><mark class="hilight">Tools:</mark><br>Tableau<br>Adobe Illustrator</p>
+                <p><mark class="hilight">Click to View:</mark><br><a target="_blank" href="https://github.com/sadhana-sr/Interactive-Communicative-Visualization">Github</a><br><a target="_blank" href="https://public.tableau.com/app/profile/sadhana6563/viz/InteractiveCommunicativeVisualization/InteractiveCommVis?publish=yes">Tableau<br><a target="_blank" href="https://docs.google.com/document/d/1kWCGN3_HV9ZmVExuUxnd6d-N7dGXjTd8RrWvlb2L6rU/edit">Project Report</a></p>
+            </div>
+        </div>
+ 
+
+
+        <div class="section-container" style="background-color:#ebebeb85">
+            <h2>Background</h2>
+            <p>In the Washington Post article <a style="font-weight: 600;" href="https://www.washingtonpost.com/news/wonk/wp/2015/08/17/every-county-in-america-ranked-by-natural-beauty/">“Every county in America, ranked by scenery and climate.”</a> journalist Chris Ingram attempts to find the absolute worst county in the country. His research led him to pinpoint Red Lake County, Minnesota at the bottom of the list.<br><br>Crazy enough, Red Lake County residents were not too happy.😱<br><br>So, they invited him to visit for himself, and to his surprise, it wasn't so bad! After his visit, he wrote another article for the Washington Post: <a style="font-weight: 600;" href="https://www.washingtonpost.com/news/wonk/wp/2015/09/03/i-called-this-place-americas-worst-place-to-live-then-i-went-there/">I called this place ‘America’s worst place to live.’ Then I went there."</a><br><br>I did some of my own research into city and county databases, and created supporting visualizations, both interactive and static.</p>
+        </div>
+
+        <div class="section-container">
+          <h2>Interactive Visualization</h2>
+          <p>Click the squares on the map to view each county's data.</p>
+
+          <div class='tableauPlaceholder' id='viz1636837952893' style='position: relative'><noscript><a href='#'><img
+            alt='Interactive CommVis '
+            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;InteractiveCommunicativeVisualization&#47;InteractiveCommVis&#47;1_rss.png'
+            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='InteractiveCommunicativeVisualization&#47;InteractiveCommVis' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image'
+          value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;In&#47;InteractiveCommunicativeVisualization&#47;InteractiveCommVis&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+      </object></div>
+    <script
+      type='text/javascript'>                    var divElement = document.getElementById('viz1636837952893'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1000px'; vizElement.style.height = '827px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '927px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+  
+        </div>
+
+        <div class="section-container" style="background-color:#ebebeb85">
+          <h2>Static Visualization</h2>
+          <img style="width: 100%;" src="images/red-lake/red-lake-static.webp">
+        </div>
+
+
+        <div class="other-section-container">
+            <h2>Other Projects</h2><br>
+    
+            <div class="container">
+            <a href=move.html><img src="images/move/move_cover.jpg">
+              <h2 id = "other-projects">MOVE</h2></a>
+            </div>
+            <div class="container">
+              <a href=flan.html><img src="images/flan/flan-screen.png">
+            <h2 id = "other-projects">FAN Internal Site</h2></a>
+          </div>
+          <div class="container">
+            <a href=dlo.html><img src="images/dlo/dlo-cover.png">
+            <h2 id = "other-projects">UM Library</h2></a>
+          </div>
+          </div>
+
+
+    </body>
+
+    <footer style="color: #ffffff;">
+      <h2>Thanks for visiting!👾</h2>
+      <p>If you'd like to reach out to me, feel free to shoot me an email <a href="mailto:sadhanar@umich.edu">sadhanar[AT]umich.edu</a>,
+         or add me on <a target="_blank" href = "linkedin.com/in/sadhanara">LinkedIn.</a>
+      </p>
+
+      <p><a href="index.html">Work</a> | <a href="about.html">About</a> | <a href="resume.html">Resume</a></p>
+
+      <p id="creds">Designed & Developed by Sadhana Ramaseshadri © 2022</p>
+    </footer>
+
+
+
+</html>

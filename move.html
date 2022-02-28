@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="mystyle_move.css">
+        <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap' rel='stylesheet' type='text/css'>
+  
+  
+              <nav class="navbar" id="nav-bootstrap-overrides">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" id="link-override" href="index.html">Sadhana Ramaseshadri</a>
+                </div>
+                <ul class="nav navbar-nav" id="hover-nav-bootstrap-overrides">
+                  <li class="active"><a href="index.html">Work</a></li>
+                  <li><a id="link-override" href="about.html">About</a></li>
+                  <li><a id="link-override" href="resume.html">Resume</a></li>
+                </ul>
+              </div>
+            </nav>
+
+            <div class="header">
+                <div class="progress-container">
+                  <div class="progress-bar" id="myBar"></div>
+                </div>
+            </div>
+
+            <div class="scroll-buttons">
+                <a href="move.html#discover-anchor"><button id = "scroll">Discover</button></a>
+                <a href="move.html#develop-anchor"><button id = "scroll">Develop</button></a>
+                <a href="move.html#define-anchor"><button id = "scroll">Define</button></a>
+                <a href="move.html#deliver-anchor"><button id = "scroll">Deliver</button></a>
+                <a href="move.html#top"><button id = "scroll">☝️</button></a>
+            </div>
+    
+              <script>
+                // When the user scrolls the page, execute myFunction 
+                window.onscroll = function() {myFunction()};
+                
+                function myFunction() {
+                  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                  var scrolled = (winScroll / height) * 100;
+                  document.getElementById("myBar").style.width = scrolled + "%";
+                };
+                </script>
+
+                <base href="move.html">
+    </head>
+    <body>
+        <div class='move-banner' id="top">
+
+                <img id = "move_pic" src="images/move/Move_header_1.png" style="height: 300px;">
+                <div class="move-intro">
+                  <h1 style="font-weight:700">MOVE</h1>
+                  <p><img src="images/move/wud-logo-color_edited.webp" style="height: 50px;"> - 🏆4th Place</p>
+
+                  <p style="font-weight: 400;text-align: justify;">MOVE is a mobile application that uses Augmented and Virtual Reality to <mark class="hilight">track patient movement and progress and lead them through workouts, while correcting their form.</mark> Users can login to their app to see their daily exercises as well as connect with their PT/OT via video call or text.</p>
+                </div>
+        </div>
+
+        <div class="section-container">
+            <div class="grid-container">
+                <p><mark class="hilight">My Role:</mark><br>Ix Designer<br>UI/UX<br>UX Researcher</p>
+                <p><mark class="hilight">Team:</mark><br>4 members</p>
+                <p><mark class="hilight">Duration:</mark><br>12 weeks</p>
+                <p><mark class="hilight">Tools:</mark><br>Figma<br>Adobe Illustrator<br>Miro<br>Invision</p>
+            </div>
+        </div>
+ 
+
+
+        <div class="section-container" style="background-color:#ebebeb85">
+            <h2>The Problem</h2>
+            <p>
+                When physical or occupational therapy patients leave the hospital, they don’t always know what exercises to do or when and how to do them. Patients need guidance in ensuring they are following proper form and schedule, especially being away from constant surveillance of a PT/OT.<br>
+                Currently, patients have the option of visiting their PT/OT in person during appointments, but this may not always be accessible due to physical convenience or financial constraints. There are also existing videos online that help with various exercises, but without the ability to offer and receive feedback in live time, both doctors and patients have no way of knowing if such exercises are being performed correctly, which risks causing more harm than help. 
+            </p>
+        </div>
+
+        <div class="section-container" id="deliver-anchor">
+            <h2>Our Solution<br><h2>
+            
+            <a target="_blank" href="https://www.figma.com/proto/YfkK3pLPzczx1Fkzwg0RNZ/MOVE?scaling=min-zoom&node-id=1%3A407"><button id="click-thru" style="background-color: #d4bbf1">Click through the prototype</button></a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=Hh5Wbw8V8ag"><button id="click-thru" style="background-color: #d4bbf1">Watch the demo</button></a>
+
+            <p>❇️ = flows that I took leadership on</p>
+            <div class="section-container">
+                <div class="grid-container">
+                    <img id="grid-container-screens" src="images/move/screen_move_home.png">
+                    
+                    <p id="grid-container-screens-p"><mark class="hilight">Daily Overview</mark><br>On the home page, users can view their exercises for the day as well as for the coming days, and the time they will take to complete along with their intensity levels. The home page also displays a daily affirmation to motivate the user and keep them encouraged.</p>
+                </div><hr> 
+
+                <div class="grid-container">
+                    <p id="grid-container-screens-p"><mark class="hilight">❇️ AI-Guided PT Routines</mark><br>Upon selection, users can then click to get started. They set up the phone so that the AR/AI can track their movements, and follow along with the demo to do their exercises The AI will correct their form if necessary. They then move onto the next exercise until complete.</p>
+                    <img id="grid-container-screens" src="images/move/screen_move_ai.png">
+                </div><hr> 
+
+                <div class="grid-container">
+                    <img id="grid-container-screens" src="images/move/screen_move_rating2.png">
+                    <p id="grid-container-screens-p"><mark class="hilight">❇️ Rate Your Workout</mark><br>At the end of their exercises, users fill out a rating form and pain log, which offers a place to rate how easy or hard the exercises were, if there was any pain and where it was and how painful, and an option to leave any comments for the user’s physical therapist.</p>
+                </div><hr> 
+
+                <div class="grid-container">
+                    <p id="grid-container-screens-p"><mark class="hilight">Review Your Progress</mark><br>The progress tracking page displays how far along users are in their week, how long they spend each day doing exercises, their form adherence level, and a few reminders to improve their progress. They can also look through their past exercises via calendar or list view, and see their individual progress for each day.
+                    </p>
+                    <img id="grid-container-screens"src="images/move/screen_move_progress.png">
+                </div><hr> 
+            </div> 
+        </div>
+
+        <div class="section-container" style="background-color:#ebebeb85">
+            <h2>Process</h2>
+            <p>We followed the Double Diamond framework shown below as we researched, designed, and iterated.</p>
+            <img src="images/design_diamond.png" style="display: block; margin-left: auto; margin-right: auto; width: 75%;">
+            
+        </div>
+
+        
+        <div class="section-container" id="discover-anchor">
+            <h2>Research</h2>
+
+            <div class="research-text">
+                <p>
+                    Our team conducted interviews to get a sense of the problems current and former physical therapy patients experienced in terms of completing at-home exercises. Upon analyzing these interviews, there was a pattern of three main pain points:
+                </p>
+                <ol>
+                    <li>Finding motivation to do their exercises</li>
+                    <li>When and how to do the exercises properly, and</li>
+                    <li>Feeling comfortable contacting physical therapists.</li>
+                </ol>
+                
+                <p>Using this information about our target audience, we created a set of user personas and scenarios.</p>
+
+                <img src ="images/move/move_persona.jpeg" style="display: block; margin-left: auto; margin-right: auto; width: 75%; padding-top: 10%;"></a>
+
+            </div>
+        </div>
+
+        <div class="section-container" id="develop-anchor" style="background-color:#ebebeb85">
+            <h2>Sketching</h2>
+            <p>
+                To start brainstorming ways of tackling these problems, I quickly sketched 32 different potential solutions. These ranged from physical products, to simple routines to mitigate patients' issues.
+            </p>
+            <div class="sketch-container">
+                <div class="sketches">
+                    <img src="images/move/move_sketches1.webp" style="width: 100%;">
+                </div>
+                <div class="sketches">
+                    <img src="images/move/move_sketches2.webp" style="width: 120%;">
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container">
+            <h2>Storyboarding</h2>
+            <p>
+                Creating storyboards for potential situations using the sketches as an outline provided a visual narrative for our team's scenarios.
+            </p>
+            <p style="padding-top: 5%; text-align: center;">James' AI Physical Therapist</p>
+            <img src = "images/move/move_sketching.webp" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+            <p style="padding-top: 5%; text-align: center;">Tara's Exercise Planning</p>
+            <img src = "images/move/move_sketching2.webp" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+        </div>
+
+        <div class="section-container" id="define-anchor" style="background-color:#ebebeb85">
+            <h2>User Flow</h2>
+            <p>
+                We created a visual mapping of the various flows that users will take through the system, taking into consideration the flow between the different screens, and the different paths users might take. 
+            </p>
+            <img src = "images/move/move_userflow.webp" style="display: block; margin-left: auto; margin-right: auto; width: 100%;padding-top: 5%;">
+        </div>
+
+        <div class="section-container">
+            <h2>Paper Prototype</h2>
+            <p>
+                I created and tested a paper prototype(watch video) of some screens and interactions involving an AR/VR feature.
+            </p>
+            <div class="paper-row" style="padding-top:5%">
+                <img  id = "paper" src = "images/move/move_paperprototype.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+            </div>
+        </div>
+
+
+        <div class="section-container" style="background-color:#ebebeb85">
+            <h2>Wireframes</h2>
+            <p>
+                After performing a usability inspection on the paper prototype, the team created low-fidelity wireframes. I focused on wire-framing the AR/VR feature, and the Ratings page.
+            </p>
+            <div class="paper-row" style="padding-top:5%">
+                <img style = "background-color:#ffffff" id = "paper" src = "images/move/move_wireframe1.webp" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+                <img style = "background-color:#ffffff" id = "paper" src = "images/move/move_wireframe2.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+            </div>
+            <p>
+                Our wireframes were then translated into the first version of an interactive high-fidelity prototype. This prototype went through a few rounds of usability testing, where our team logged the usability defects and made iterative improvements.
+            </p>
+        </div>
+
+        <div class="section-container">
+            <h2>Visual Design</h2>
+            <p>We created a design system to maintain consistency through the app. The color scheme, typography, and use of emojis makes doing physical therapy exercises more exciting, and the app feels a little more personal than typical in the PT space. </p>
+                <img src = "images/move/move_design_system.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 100%;">
+        </div>
+
+        <div class="section-container" style="background-color:#ebebeb85">
+            <h2>Reflection</h2><br>
+            <p><mark class ="hilight">We are designing for the user - not for the team.👤</mark>
+            <br>Going into initial ideation of this project, I had several assumptions about the needs and wants of physical therapy patients - most of which were disproven through interviews! For example, a feature we thought would be of great need was a community aspect to patient care. However, every single interview participant expressed a strong aversion, and actually did not want much interaction with anyone other than their PT. We might have thought this because of a lack of social interaction due to the global pandemic. Or maybe, it was because we overestimated the role that physical therapy plays in a patient's everyday. Either way, it is important that we do not impose biases or let them reflect in the design. User interviews and user personas played a sizable role in keeping our biases out of the process.</p>
+            <hr>
+            <p><mark class ="hilight">Accessibility is very important! ♿
+            </mark>
+            <br>The first round of usability testing revealed a large issue in the UI. Many older participants reported being unable to read the text, or interpret symbols, due to color contrast or the size of the text. The majority of physical therapy patients fall into the 65+ age category. On top of that, given that the application's main selling point is AR/VR, usability for senior citizens should be heavily emphasized so that they can feel comfortable adopting this new-age technology into their routines. Once realized, I was able to make several changes to both text and color that eased a lot of of the slip-ups that users were experiencing.</p>
+        </div>
+
+        <div class="other-section-container">
+            <h2>Other Projects</h2><br>
+    
+            <div class="container">
+                <a href=flan.html><img src="images/flan/flan-screen.png">
+              <h2 id = "other-projects">FAN Internal Site</h2></a>
+            </div>
+            <div class="container">
+                <a href=red_lake.html><img src="images/red-lake/red-lake-cover.png">
+                <h2 id = "other-projects">Red Lake, MN</h2></a>
+              </div>
+              <div class="container">
+                <a href=dlo.html><img src="images/dlo/dlo-cover.png">
+                <h2 id = "other-projects">UM Library</h2></a>
+              </div>
+          </div>
+
+    </body>
+    
+    <footer style="color: #ffffff;">
+        <h2>Thanks for visiting!👾</h2>
+        <p>If you'd like to reach out to me, feel free to shoot me an email <a href="mailto:sadhanar@umich.edu">sadhanar[AT]umich.edu</a>,
+           or add me on <a target="_blank" href = "linkedin.com/in/sadhanara">LinkedIn.</a>
+        </p>
+  
+        <p><a href="index.html">Work</a> | <a href="about.html">About</a> | <a href="resume.html">Resume</a></p>
+  
+        <p id="creds">Designed & Developed by Sadhana Ramaseshadri © 2022</p>
+      </footer>
+
+
+
+</html>

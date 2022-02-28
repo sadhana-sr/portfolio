@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="mystyle.css">
+      <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap' rel='stylesheet' type='text/css'>
+
+
+      <nav class="navbar" id="nav-bootstrap-overrides">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" id="link-override" href="index.html">Sadhana Ramaseshadri</a>
+          </div>
+          <ul class="nav navbar-nav" id="hover-nav-bootstrap-overrides">
+            <li><a id="link-override" href="index.html">Work</a></li>
+            <li class="active"><a id="link-override" href="about.html">About</a></li>
+            <li><a id="link-override" href="resume.html">Resume</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="header">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+
+      <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+        </script>
+
+
+        <div class="about-header">
+          <h1 style="text-align: center;"><mark class="hilight" id ="about-me">About Me</mark></h1>
+        </div>
+    </head>
+    <body>  
+      <div class="wrapper" id="wrapper">
+        <div class="e">
+          <p style="font-size: small; font-weight: 600;color: #00000070;">EDUCATION</p>
+          <button class="about">🎓 M.S. <mark class="about-hilight"><a target="_blank" href="https://www.si.umich.edu/programs/master-science-information">UX Research & Design @ UMSI</mark></a> '22</button><br>
+
+          <button class="about">🎓 B.S. <mark class="about-hilight"><a target="_blank" href="https://www.si.umich.edu/programs/bachelor-science-information">Information @ UMSI</mark></a> +
+          <mark class="about-hilight"><a target="_blank" href="https://stamps.umich.edu/">Art Minor</mark></a> '21</button><br>
+          
+          <hr style="border-color: black; width:70%;">
+          <p style="font-size: small; font-weight: 600;color: #00000070;">INTERESTS</p>
+          <button class="about">💕 Leveraging technology for social good</button><br>
+          
+          <button class="about">💕 Community-based participatory design</button><br>
+          
+          <button class="about">💕 Visual design systems</button><br>
+
+          <hr style="border-color: black; width:70%;">
+          <p style="font-size: small; font-weight: 600;color: #00000070;">WHEN I'M NOT WEARING MY DESIGNER HAT</p>
+          
+            <a target="_blank" href="https://www.michigantaal.com/"><button class="about" id="hobbies">💃🏽 Dancing</button></a><br>
+            <a target="_blank" href="https://www.instagram.com/sadhana.psd/"><button class="about"id="hobbies">🖌️ Doodling</button></a><br>
+            <a target="_blank" href="https://open.spotify.com/playlist/1DnPwaXAVjZ1bo1nMh1JVA?si=8258b2aaf04342d7"><button class="about"id="hobbies">🎧 Seeking out new music</button></a>
+        <br>
+            
+        </div>
+        <img class="b" src="images/about-images/macinack-sadhana-crop.png">
+            
+      </div>
+
+
+
+
+      <div class="section-container">
+      <h2>Experience</h2>
+        <div id="grid-container">
+            <p><mark class="hilight">UX Consulting Intern</mark>@ DNEP<br><mark class="hilight-exp">May-Aug 2021</mark><br><br>
+            <mark class="hilight">Research Assistant</mark>@ Social Innovations Group<br><mark class="hilight-exp">Oct 2020-May 2021</mark><br><br>
+            <mark class="hilight">Graphic Designer</mark>@ LynxDx<br><mark class="hilight-exp">Jan 2021-Sep 2021</mark></p>
+            <p><mark class="hilight">UI/UX Intern</mark>@ Sukhi<br><mark class="hilight-exp">May-Aug 2020</mark><br><br>
+              <mark class="hilight">Graphic Design Intern</mark>@ Student Life CMD Agency<br><mark class="hilight-exp">May 2019-2021</mark><br><br>
+              <mark class="hilight">UI Intern</mark>@ Fooya<br><mark class="hilight-exp">May-Aug 2018</mark></p>
+        </div>
+    </div>
+
+    </body>
+    <footer style="color: #ffffff;">
+      <h2>Thanks for visiting!👾</h2>
+      <p>If you'd like to reach out to me, feel free to shoot me an email <a href="mailto:sadhanar@umich.edu">sadhanar[AT]umich.edu</a>,
+         or add me on <a target="_blank" href = "linkedin.com/in/sadhanara">LinkedIn.</a>
+      </p>
+
+      <p><a href="index.html">Work</a> | <a href="about.html">About</a> | <a href="resume.html">Resume</a></p>
+
+      <p id="creds">Designed & Developed by Sadhana Ramaseshadri © 2022</p>
+    </footer>
+</html>

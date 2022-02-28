@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="mystyle_flan.css">
+        <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap' rel='stylesheet' type='text/css'>
+  
+  
+        <nav class="navbar" id="nav-bootstrap-overrides">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" id="link-override" href="index.html">Sadhana Ramaseshadri</a>
+            </div>
+            <ul class="nav navbar-nav" id="hover-nav-bootstrap-overrides">
+              <li class="active"><a href="index.html">Work</a></li>
+              <li><a id="link-override" href="about.html">About</a></li>
+              <li><a id="link-override" href="resume.html">Resume</a></li>
+            </ul>
+          </div>
+        </nav>
+
+            <div class="header">
+                <div class="progress-container">
+                  <div class="progress-bar" id="myBar"></div>
+                </div>
+            </div>
+
+            <div class="scroll-buttons">
+              <a href="flan.html#problem-anchor"><button id = "scroll">Problem</button></a>
+              <a href="flan.html#process-anchor"><button id = "scroll">Process</button></a>
+              <a href="flan.html#reflection-anchor"><button id = "scroll">Reflection</button></a>
+              <a href="flan.html#top"><button id = "scroll">☝️</button></a>
+            </div>
+
+    
+              <script>
+                // When the user scrolls the page, execute myFunction 
+                window.onscroll = function() {myFunction()};
+                
+                function myFunction() {
+                  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                  var scrolled = (winScroll / height) * 100;
+                  document.getElementById("myBar").style.width = scrolled + "%";
+                }
+                </script>
+
+                <base href="move.html">
+    </head>
+    <body>
+        <div class='move-banner' id="top">
+                <img id = "move_pic" src="images/flan/flan-screen.png" style="height: 300px;">
+
+                <div class="move-intro">
+                  <h1 style="font-weight:700">Farm Labor Internal Application</h1>
+                  <p style="font-weight: 400;text-align: justify;">For my capstone project for the BSI program, I worked with Research Action Design and Farmworker Advocacy Network to improve the deduplication process of importing migrant labor camp data for the network’s internal site. </p>
+                </div>
+        </div>
+
+        <div class="section-container">
+            <div class="grid-container">
+                <p><mark class="hilight">My Role:</mark><br>UI/UX<br>UX Researcher</p>
+                <p><mark class="hilight">Team:</mark><br>4 members</p>
+                <p><mark class="hilight">Duration:</mark><br>30 weeks</p>
+                <p><mark class="hilight">Tools:</mark><br>Figma<br>Adobe InDesign<br>Miro</p>
+            </div>
+        </div>
+ 
+
+
+        <div class="section-container" id ="problem-anchor" style="background-color:#ebebeb85">
+            <h2>The Problem</h2>
+            <p>Our team was asked to solve the design problems that come with the FAN's large database, 
+                which collects and maintains high-priority information related to 
+                the location and profile of labor camps throughout North Carolina. 
+                At a high-level, these problems center around the <mark class="hilight">deduplication process, which involves identifying potentially duplicate inputs of
+                camp data within the large database.</mark><br><br>
+                🔒This project is protected under a non-disclosure agreement. Feel free to reach out for more info!
+            
+            </p>
+        </div>
+
+        <div class="section-container" id="process-anchor">
+            <h2>Process</h2>
+            <p>My team and I spent Sep - Dec 2020 creating a project timeline and learning the ins and outs of the internal site.
+                <br><br>Jan - Apr 2021 was spent executing the following timeline:
+            </p>
+            <div class="timeline-container">
+            <img src="images/flan/flan-timeline.png" style="width: 120%;">
+            </div>
+        </div>
+
+        <div class="section-container" id="reflection-anchor" style="background-color:#ebebeb85">
+            <h2>Reflection</h2><br>
+            <p><mark class ="hilight">The importance of iterative feedback</mark>
+                <br>Throughout the SI 487 (the BSI Capstone course), we participated in weekly stand-ups with our instructors and peers. Although they did not know the ins and out of the project, they were an excellent source for iterative feedback! They were able to point out edge cases in our designs that we did not initially think about, and we were able to learn a lot about their project processes as well.
+                </p><hr>
+                <p><mark class ="hilight">Presenting with Context
+                </mark>
+                <br>At our aforementioned weekly standups, we also had to ensure our presentations gave enough context to our classmates so that they could ask relevant questions without being confused. This allowed me to step back and view our project from an outside perspective.
+                </p><hr>
+                <p><mark class ="hilight">Designing for tangible world solutions
+                </mark>
+                <br>When designing the site, we had to take into consideration what bits of data would be most useful for org admins, and what pieces of migrant labor camp data is the most crucial for on-site organizers, health outreach workers, and legal aid groups to best help farm workers.
+                <br>I'm so grateful for the relationship we built with our clients at RAD and the FAN, and anticipate that the implementation of our product will assist their organizations’ efforts in the future.    
+            </p>
+        </div>
+
+
+        <div class="other-section-container">
+            <h2>Other Projects</h2><br>
+    
+            <div class="container">
+            <a href=move.html><img src="images/move/move_cover.jpg">
+              <h2 id = "other-projects">MOVE</h2></a>
+            </div>
+            <div class="container">
+              <a href=red_lake.html><img src="images/red-lake/red-lake-cover.png">
+              <h2 id = "other-projects">Red Lake, MN</h2></a>
+            </div>
+            <div class="container">
+              <a href=dlo.html><img src="images/dlo/dlo-cover.png">
+              <h2 id = "other-projects">UM Library</h2></a>
+            </div>
+          </div>
+
+
+    </body>
+    
+    <footer style="color: #ffffff;">
+      <h2>Thanks for visiting!👾</h2>
+      <p>If you'd like to reach out to me, feel free to shoot me an email <a href="mailto:sadhanar@umich.edu">sadhanar[AT]umich.edu</a>,
+         or add me on <a target="_blank" href = "linkedin.com/in/sadhanara">LinkedIn.</a>
+      </p>
+
+      <p><a href="index.html">Work</a> | <a href="about.html">About</a> | <a href="resume.html">Resume</a></p>
+
+      <p id="creds">Designed & Developed by Sadhana Ramaseshadri © 2022</p>
+    </footer>
+
+
+</html>
