@@ -434,7 +434,7 @@ button.about#hobbies:hover{
     .container {
         max-height:300px;
         width: 100%;
-        margin-bottom:70%;
+        margin-bottom:200px;
     }
     .hello-container{
         text-align: center;
