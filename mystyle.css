@@ -439,22 +439,21 @@ button.about#hobbies:hover{
     .hello-container{
         text-align: center;
     }
-    .projects-container{
-        text-align: center;
+    .projects-container h2{
+        white-space: nowrap;
     }
+
     h1{
         font-size: 35px;
     }
 
-    h2{
-        white-space: nowrap;
-    }
     .memoji{
         display: none;
     }
     p{
         align-items: center;
         width: auto;
+        font-size: large;
     }
     footer{
         text-align: center;
