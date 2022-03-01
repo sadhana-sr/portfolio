@@ -445,6 +445,10 @@ button.about#hobbies:hover{
     h1{
         font-size: 35px;
     }
+
+    h2{
+        white-space: nowrap;
+    }
     .memoji{
         display: none;
     }
