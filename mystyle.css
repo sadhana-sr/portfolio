@@ -68,7 +68,7 @@
 }
 
 .memoji:hover{
-    filter: drop-shadow(0px -20px 20px #ebfdff);}
+    filter: drop-shadow(0px -20px 20px #cffaff);}
 
 .name-pronounciation::after{
     content: "Sadhana.";
@@ -117,9 +117,7 @@ mark.about-hilight{
 
 .projects-container{
     padding: 40px;
-    padding-bottom: 200px;
-    background-color: #Fff;
-    
+    padding-bottom: 200px;    
 }
 
 .projects-container:after {
@@ -182,6 +180,7 @@ p{
 }
 
 button{
+    white-space: nowrap;
     display: inline-block;
     font-size: 18px;
     margin-left: 10px;
@@ -199,56 +198,24 @@ button{
 
 }
 
-#linkedin{
+#sm{
     padding: 2px;
 }
 
-#medium{
-    padding: 2px;
-}
 
-#ig{
-    padding: 2px;
-}
-
-#github{
-    padding: 2px;
-}
-
-#linkedin:hover{
+#sm:hover{
     border-color: #EF6367;
     border-style: solid;
     border-radius: 100%;
     border-width: 3px;
 }
 
-#medium:hover{
-    border-color: #EF6367;
-    border-style: solid;
-    border-radius: 100%;
-    border-width: 3px;
-}
-
-#ig:hover{
-    border-color: #EF6367;
-    border-style: solid;
-    border-radius: 100%;
-    border-width: 3px;
-}
-
-#github:hover{
-    border-color: #EF6367;
-    border-style: solid;
-    border-radius: 100%;
-    border-width: 3px;
-}
 
 .container {
     float: left;
     width: 25%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-    
+    height: 300px; 
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
 }
@@ -267,25 +234,6 @@ button{
 
 
 
-#classification-left{
-    float:left;
-    border-color: #000;
-    border-style: solid;
-    border-width: 2px;
-    font-weight: 400;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-#classification-right{
-    float:right;
-    border-color: #000;
-    border-style: solid;
-    border-width: 2px;
-    font-weight: 400;
-    margin-left: 10px;
-    margin-top: 10px;
-}
 
 .about-header{
     padding: 20px;
@@ -449,3 +397,64 @@ button.about#hobbies:hover{
     cursor: pointer;
 }
 
+/* IPAD / SMALLER SCREEN */
+@media screen and (max-width: 1200px) {
+    .container {
+      max-height:300px;
+      margin-bottom:30%;
+      width:50%;
+    }
+    .memoji{
+        max-height: 200px;
+        -webkit-transform:translateY(30px);
+        transform: translateY(30px);
+    }
+
+    .projects-container{
+        padding: 40px; 
+        width:80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .projects-container:after {
+        content: "";
+        display: table;
+        clear: both;
+
+    }
+    .projects-container p{
+        width:300px;
+    }
+}
+
+
+/* PHONE */
+@media screen and (max-width: 800px) {
+    .container {
+        max-height:300px;
+        width: 100%;
+        margin-bottom:40%;
+    }
+    .hello-container{
+        text-align: center;
+    }
+    .projects-container{
+        text-align: center;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .memoji{
+        display: none;
+    }
+    p{
+        align-items: center;
+        width: auto;
+
+    }
+
+    footer{
+        text-align: center;
+    }
+  }
