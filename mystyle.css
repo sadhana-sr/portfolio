@@ -77,6 +77,13 @@
     color: #EF6367;
 }
 
+.memoji:hover ~ .hello-intro .name-pronounciation::after {
+    content: "saadh•na";
+    font-style: italic;
+    text-decoration:underline;
+    text-decoration-color: #000; 
+}
+
 .name-pronounciation:hover::after{
     content: "saadh•na";
     font-style: italic;
