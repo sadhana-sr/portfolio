@@ -158,6 +158,7 @@ mark.hilight{
     
 }
 
+
 button{
     color: #fff;
     border-width: 0px;
@@ -196,21 +197,6 @@ button{
     grid-template-columns:auto;
     padding: 20px;
 }
-
-
-
-
-.process-image{
-    background-size: cover;
-    position: relative;
-    padding-left: 20px;
-    grid-column-start: 1;
-    grid-column-end:2;
-    width: 50%;
-}
-
-
-
 
 .section-container{
     padding-left: 20%;
@@ -305,6 +291,9 @@ button{
     overflow:auto;
 }
 
+.responsive-container{
+    display: none;
+}
 
 
 footer {
@@ -315,4 +304,143 @@ footer {
 #creds{
     padding-top: 50px;
     font-size: 100%;
+}
+
+/* IPAD / SMALLER SCREEN */
+@media screen and (max-width: 1200px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .container {
+      max-height:300px;
+      margin-bottom:30%;
+      width:50%;
+    }
+    .memoji{
+        max-height: 200px;
+        -webkit-transform:translateY(30px);
+        transform: translateY(30px);
+    }
+
+
+    .projects-container{
+        padding: 40px; 
+        width:80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .projects-container:after {
+        content: "";
+        display: table;
+        clear: both;
+
+    }
+    .projects-container p{
+        width:300px;
+    }
+    .b {
+       width: auto;
+    }
+
+    #grid-container-screens-p {
+        font-size: large;
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100%;
+    }
+    
+      #grid-container-screens {
+        width: 200px;
+        box-shadow: 10px 10px 5px #00000042;
+        border-radius: 20px;
+      }
+      
+    .container{
+        display:none
+    }
+
+    
+    .responsive-container{
+        display: block;
+        overflow:auto;
+        white-space: nowrap;
+        text-align: center;
+
+    }
+
+    .other-section-container{
+        text-align: center;
+    }
+    .scroll-buttons{
+        margin-right: 20px;
+    }
+
+
+}
+
+
+/* PHONE */
+@media screen and (max-width: 800px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .container {
+        max-height:300px;
+        width: 100%;
+        margin-bottom:200px;
+
+    }
+    .hello-container{
+        text-align: center;
+    }
+    .projects-container h2{
+        white-space: nowrap;
+    }
+
+    
+    .section-container#experience{
+        padding: 5%;
+    }
+
+    h1 h2 p{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .memoji{
+        display: none;
+    }
+
+    p{
+        align-items: center;
+        width: auto;
+        font-size: large;
+    }
+    footer{
+        text-align: center;
+    }
+
+
+    .container{
+        display:none
+    }
+    .responsive-container{
+        display: block;
+        white-space: nowrap;
+        text-align: center;
+
+    }
+    .other-section-container{
+        text-align: center;
+    }
+
+    .scroll-buttons{
+        display: none;
+    }
 }
