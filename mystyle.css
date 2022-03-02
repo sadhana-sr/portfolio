@@ -426,15 +426,25 @@ button.about#hobbies:hover{
     .projects-container p{
         width:300px;
     }
+    .b {
+       width: auto;
+    }
+
 }
 
 
 /* PHONE */
 @media screen and (max-width: 800px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     .container {
         max-height:300px;
         width: 100%;
         margin-bottom:200px;
+
     }
     .hello-container{
         text-align: center;
@@ -443,13 +453,19 @@ button.about#hobbies:hover{
         white-space: nowrap;
     }
 
-    h1{
+    .section-container#experience{
+        padding: 5%;
+    }
+
+    h1 h2 p{
         font-size: 35px;
+        text-align: center;
     }
 
     .memoji{
         display: none;
     }
+
     p{
         align-items: center;
         width: auto;
@@ -458,4 +474,15 @@ button.about#hobbies:hover{
     footer{
         text-align: center;
     }
+    .b {
+    display: none;
+     }
+
+     .wrapper {
+        display:contents;
+        height:500px;
+        text-align: center;
+    }
   }
+
+
