@@ -1,4 +1,8 @@
 /*font-family: 'OpenDyslexic3Regular' important!;*/
+html{
+    scroll-behavior: smooth;
+}
+
 
 #nav-bootstrap-overrides{
     font-family: 'Poppins', sans-serif;
@@ -326,7 +330,6 @@ footer {
 
 body{
     background-color: #eeece699;
-
 }
 
 #border img {
