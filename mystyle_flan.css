@@ -171,6 +171,31 @@ button{
     opacity: 1;
 }
 
+
+.encrypted-flan-pdf{
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 0px;
+    background-color: white;
+    color:#000;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+    padding: 1%;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin: 20px;
+    box-shadow: -5px 5px 15px #00000042;
+    border-radius: 10px;    
+}
+
+.encrypted-flan-pdf:hover{
+-webkit-transform:translateY(-18px);
+transform: translateY(-18px)
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;

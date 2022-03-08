@@ -72,7 +72,8 @@ html{
     max-height: 300px;
 }
 
-/*.memoji:hover{filter: drop-shadow(0px -20px 20px #cffaff);}*/
+/*.memoji:hover{
+    filter: drop-shadow(0px -20px 0px #ffffff);}*/
 
 .name-pronounciation::after{
     content: "Sadhana.";
