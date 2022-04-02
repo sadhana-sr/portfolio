@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mystyle_cutgroup.css">
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap' rel='stylesheet'
+        type='text/css'>
+
+
+    <nav class="navbar" id="nav-bootstrap-overrides">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" id="link-override" href="index.html">Sadhana Ramaseshadri</a>
+            </div>
+            <ul class="nav navbar-nav" id="hover-nav-bootstrap-overrides">
+                <li class="active"><a href="index.html">Work</a></li>
+                <li><a id="link-override" href="about.html">About</a></li>
+                <li><a id="link-override" href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+
+    <div class="scroll-buttons">
+        <a href="cutgroup.html#methodology-anchor"><button id="scroll">Testing</button></a>
+        <a href="cutgroup.html#results-anchor"><button id="scroll">Results</button></a>
+        <a href="cutgroup.html#map-anchor"><button id="scroll">Journey</button></a>
+        <a href="cutgroup.html#next-anchor"><button id="scroll">Next Steps</button></a>
+
+        <a href="cutgroup.html#top"><button id="scroll">☝️</button></a>
+    </div>
+
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        };
+    </script>
+
+    <base href="move.html">
+
+    <title>CUTGroup | Work | Sadhana's UX Portfolio</title>
+</head>
+
+<body>
+    <div class='move-banner' id="top">
+
+        <img id="move_pic" src="images/cutgroup/michigan_logo.png" style="height: 300px;">
+        <div class="move-intro">
+            <h1 style="font-weight:700">CUTGroup</h1>
+            <p style="font-weight: 400;text-align: center;">As a part of Civic User Testing Group (CUTGroup), we use a "build with" approach to test civic websites and applications to make sure they are accessible and usable by the public. The motto of our process is: <br><mark class="hilight">“If it doesn’t work for you, it doesn’t work!”</mark></p>
+        </div>
+    </div>
+
+    <div class="section-container">
+        <div class="grid-container">
+            <p><mark class="hilight">My Role:</mark><br>UX Researcher</p>
+            <p><mark class="hilight">Team:</mark><br>4 members</p>
+            <p><mark class="hilight">Duration:</mark><br>3 weeks</p>
+            <p><mark class="hilight">Tools:</mark><br>Figma<br>Miro</p>
+        </div>
+    </div>
+
+
+
+    <div class="section-container" style="background-color:#ebebeb85">
+        <h2>The Problem</h2>
+        <p>The Michigan Campaign Finance Act (MCFA) is a statute that
+            governs the reporting responsibilities of every candidate running
+            for office in Michigan. It is known to be complicated, lengthy, and confusing, especially for new
+            candidates. When a candidate doesn’t comply with the MCFA, they are required to pay fines and face
+            penalties. The most accessible resource to understand the MCFA right now is the
+            Bureau of Elections’ Candidate Manual, an extremely dated, all-HTML resource. 
+            It has been noticed that referring to the Manual often introduces more confusion by candidates who are amidst learning
+            about the campaign finance process. 
+        </p>
+    </div>
+
+    <!-- User Testing Details -->
+    <div class="section-container" id="methodology-anchor">
+        <h2>Our Solution</h2>
+            <p><mark class="hilight">Goal:</mark>Understand how users use the candidate manual to find and understand information in order to meet financial reporting requirements.</p>
+            <br><p><mark class="hilight">Users:</mark>7 participants with backgrounds in running for government or has experience filing campaign finances</p>
+            <br><p><mark class="hilight">System Evaluated:</mark>MERTS Plus Candidate Manual - Specifically the Campaign Finance Section in the manual</p>
+                
+    
+        <br><h2><mark class="hilight">User Testing: </mark><a target="_blank" href="https://tinyurl.com/2p8s4vcs"><button>View Proctoring Script</button></a></h2><br>
+        <div class="row">
+            <div class="column" style="background-color:#72afcd;">
+              <h3 style="font-size:x-large"><mark class="hilight">Preliminary Questions</mark></h3>
+              <p>Users were given preliminary questions to evaluate their campaign experience and familiarity with the tool.</p>
+            </div>
+            <div class="column" style="background-color:#72afcdbd;">
+                <h3 style="font-size:x-large"><mark class="hilight">User Tasks</mark></h3>
+                <p>First impressions of the site to understand its goals</p>
+                <p>Questions on whether they can find information</p>
+                <p>If they understood what information applied to them personally</p>
+              </ul>
+            </div>
+            <div class="column" style="background-color:#72afcd76;">
+                <h3 style="font-size:x-large"><mark class="hilight">Post-Test</mark></h3>
+              <p>Users were given post-test questions to assess how helpful the tool was in achieving the tasks, and what changes they want to see.
+            </p>
+            </div>
+          </div><br>
+            
+    </div>
+     
+    <!-- F+R 1 -->
+    <div class="section-container" id="results-anchor" style="background-color:#ebebeb85";">
+            <br><h2><mark class="hilight">Identified Issues & Recommendations</mark></h2>
+            
+            <div class="row">
+                <div style="height: fit-content;" class="column-finding">
+                    <h3><mark class="hilight">Lack of Structure</mark></h3>
+
+                    <ul>                      
+                        <li>There was enough information on the page, but was organized in a way that was too busy.</li><br>
+                        <li>Users voiced confusion when asked to find answers related to their own campaign.</li><br>
+                        <li>Users tended to gravitate towards the navigation menus in the left panel to complete tasks.</li>
+                    </ul>
+                </div>
+
+                <div style="height: fit-content;" class="column-finding">
+                    <h3><mark class="hilight">Recommended Solution</mark></h3>
+                    <ul>
+                        <li>Incorporate Visual Hierarchy</li><br>
+                        <li>Eliminate unnecessary heading links only used by admins.</li><br>
+                        <li>Redesign the side menus to a drop down menu from the top of the page.</li><br>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column-finding">
+                    <p><mark class="hilight">Current:</mark></p>
+                </div>
+                <div class="column-finding">
+                    <p><mark class="hilight">Recommendations:</mark></p>
+                </div>
+            </div>
+            <div class="row">
+                <img style="width: 100%; display: block; margin-left: auto; margin-right: auto; margin: top 0;"src="images/cutgroup/F1 ---both.png">
+            </div>
+    </div>
+
+    <!-- F+R 2 -->   
+    <div class="section-container">
+        <div class="row">
+            <div class="column-finding">
+                <h3><mark class="hilight">Confusing Terminology</mark></h3>
+                <ul><li>Novice users are unfamiliar with the terminology used on the page.</li><br>
+                    <li>Not understanding the meanings of terms made users confused on where to click to get the needed information.</li><br>
+                    <li>There are no visible standardization of definition for several terms.</li><br>
+                </ul>
+            </div>
+
+            <div class="column-finding">
+                <h3><mark class="hilight">Recommended Solution</mark></h3>
+                <ul>
+                    <li>Incorporate Visual Hierarchy</li><br>
+                    <li>Eliminate unnecessary heading links only used by admins.</li><br>
+                    <li>Redesign the side menus to a drop down menu from the top of the page.</li><br>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <p style="text-align: center;"><mark class="hilight">Recommendations:</mark></p>
+            <img style="width: 50%; display: block; margin-left: auto; margin-right: auto;"src="images/cutgroup/F2 --- Tooltip.png">
+        </div>
+    </div>
+            
+    <!-- F+R 3 -->
+    <div class="section-container" style="background-color:#ebebeb85">
+        <div class="row">
+            <div class="column-finding">
+                <h3><mark class="hilight">No Direct Access to Resources</mark></h3>
+                <ul>
+                    <li>Users voiced confusion when asked to find answers related to their own campaign.</li><br>
+                    <li>Users expect to view forms that apply to them directly on the page.</li><br>
+                    <li>Users do not want to access pages that are not related to them.</li><br>
+                    <li>The website implicitly caters more to State filers than Local filers.</li><br>
+                </ul>
+            </div>
+
+            <div class="column-finding">
+                <h3><mark class="hilight">Recommended Solution</mark></h3>
+                <ul>
+                    <li>Include separate references to State versus Local reporting tools, forms, and documents.</li><br>
+                    <li>Inform local candidates to refer to their county website or office.</li><br>
+                    <li>Provide appropriate hyperlinks to forms.</li><br>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <p style="text-align: center;"><mark class="hilight">Recommendations:</mark></p>
+            <img style="width: 50%; display: block; margin-left: auto; margin-right: auto;"src="images/cutgroup/F3 --- Forms.png">
+        </div>
+    </div>
+
+    <!-- User Journey -->
+    <div class="section-container" id="map-anchor">
+        <div class="row">
+            <br><h2><mark class="hilight">User Journey Map</mark></h2>
+            <img style="width: 100%; display: block; margin-left: auto; margin-right: auto;"src="images/cutgroup/user_journey.png">
+        </div>
+    </div>
+
+    <!-- Next Steps -->
+    <div class="section-container" id="next-anchor" style="background-color:#ebebeb85">
+        <br><h2><mark class="hilight">Next Steps</mark></h2><br>
+        <div class="row">
+            <img style="width: 100%; display: block; margin-left: auto; margin-right: auto;"src="images/cutgroup/next_steps.png">
+        </div> 
+    </div>
+
+    <div class="other-section-container">
+        <h2>Other Projects</h2>
+
+        <div class="container">
+            <a href=flan.html><img src="images/flan/flan-screen.png">
+                <h2 id="other-projects">FAN Internal Site</h2>
+            </a>
+        </div>
+        <div class="container">
+            <a href=move.html><img src="images/move/move_cover.jpg">
+                <h2 id="other-projects">MOVE</h2>
+            </a>
+        </div>
+        <div class="container">
+            <a href=red_lake.html><img src="images/red-lake/red-lake-cover.png">
+                <h2 id="other-projects">Red Lake, MN</h2>
+            </a>
+        </div>
+        <div class="container">
+            <a href=dlo.html><img src="images/dlo/dlo-cover.png">
+                <h2 id="other-projects">UM Library</h2>
+            </a>
+        </div>
+
+        <div class="responsive-container">
+            <a href=flan.html>
+                <h2 id="other-projects">FAN Internal Site</h2>
+            </a>
+            <a href=red_lake.html>
+                <h2 id="other-projects">Red Lake, MN</h2>
+            </a>
+            <a href=dlo.html>
+                <h2 id="other-projects">UM Library</h2>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+<footer style="color: #ffffff;">
+    <h2>Thanks for visiting!👾</h2>
+    <p>If you'd like to reach out to me, feel free to shoot me an email <a
+            href="mailto:sadhanar@umich.edu">sadhanar[AT]umich.edu</a>,
+        or add me on <a target="_blank" href="linkedin.com/in/sadhanara">LinkedIn.</a>
+    </p>
+
+    <p><a href="index.html">Work</a> | <a href="about.html">About</a> | <a href="resume.html">Resume</a></p>
+
+    <p id="creds">Designed & Developed by Sadhana Ramaseshadri © 2022</p>
+</footer>
+
+
+
+</html>

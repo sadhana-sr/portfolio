@@ -1,9 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
+
 #nav-bootstrap-overrides{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 0px;
     border-bottom-style: solid;
 }
-
 
 #link-override{
    color: #000; 
@@ -32,12 +35,44 @@
 }
 
 
+.scroll-buttons{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    display: grid;
+    border-width: 0px;
+    width: 10%;
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#scroll{
+    color: #000;
+    background-color:#ffffff00;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    padding: 3%;
+    padding-left: 0px;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#scroll:hover{
+    -webkit-transform:translateX(-18px);
+    transform: translateX(-18px);
+    background-color:#ffffff00;
+}
+
+
 .active{
     border-left-style: solid;
     border-right-style: solid;
     font-weight: 600;
     text-decoration: solid overline 4px;
-    text-decoration-color: #ffc900;
 }
 
 img{
@@ -55,9 +90,14 @@ h1{
 
 h2{
     font-size: 30px;
-    margin-left: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight:600;
+}
+
+h3{
+    font-size: 25px;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 a{
@@ -78,12 +118,13 @@ p{
     padding-left: 20px;
     padding-right: 20px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-left: 5px;
 
 }
 ul{
     font-size: 18px;
     margin-left: 20px;
-
     font-family: 'Poppins', sans-serif;
 
 }
@@ -101,15 +142,31 @@ mark.hilight{
     font-weight: 600;
 }
 
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 500px;
+}
+
+.column-finding{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+}
+
 .move-banner {
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 5%;
     padding-bottom: 5%;
-    color: #fff;
-    background-image:url("images/red-lake/red_lake.jpg");
-    background-position:center;
-
+    color: #000;
+    background-color:#72afcd;
     text-align: center;
 
   }
@@ -129,17 +186,28 @@ mark.hilight{
 }
 
 button{
-    color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #fff;
+    color: #72afcd;
     border-width: 0px;
     background-color: rgba(255, 255, 255, 0);
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: x-large;
-    margin-top: 2%;
+    margin-bottom: 1%;
     padding: 1%;
     opacity: 1;
+    border-radius: 10px;
 }
 
+button:hover{
+    background-color: #4584a4;
+    color: #fff;
+}
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -178,9 +246,6 @@ button{
     grid-column-end:2;
     width: 50%;
 }
-
-
-
 
 .section-container{
     padding-left: 20%;
@@ -261,8 +326,8 @@ button{
 
 #other-projects{
     margin-left: 5%;
-    font-size:21px;
-    
+    font-size:18px;
+    white-space: nowrap;
 }
 
 .other-section-container{
@@ -275,6 +340,10 @@ button{
     overflow:auto;
 }
 
+.responsive-container{
+    display: none;
+}
+
 footer {
     background-color: #000;
     padding: 40px;
@@ -283,10 +352,6 @@ footer {
 #creds{
     padding-top: 50px;
     font-size: 100%;
-}
-
-.responsive-container{
-    display: none;
 }
 
 /* IPAD / SMALLER SCREEN */
@@ -378,9 +443,8 @@ footer {
         margin-bottom:200px;
 
     }
-    .hello-container{
-        text-align: center;
-    }
+
+      
     .projects-container h2{
         white-space: nowrap;
     }
