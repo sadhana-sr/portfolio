@@ -208,6 +208,25 @@ button:hover{
     background-color: #4584a4;
     color: #fff;
 }
+
+#deliverable{
+    background-color: #4584a4;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin: 10px;
+    padding: 10px;
+    font-size:20px;
+}
+
+#deliverable:hover{
+    background-color: #305e75;
+    color: #fff;
+    -webkit-transform:translateY(-10px);
+    transform: translateY(-10px);
+}
+
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -371,6 +390,7 @@ footer {
         -webkit-transform:translateY(30px);
         transform: translateY(30px);
     }
+
     .section-container{
         padding: 5%;
     }
