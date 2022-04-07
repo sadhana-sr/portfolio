@@ -307,6 +307,7 @@ footer {
 
 
 
+
 .e {
     grid-column: 1 / 3;
     grid-row: 1;
@@ -400,6 +401,10 @@ button.about#hobbies:hover{
     cursor: pointer;
 }
 
+.img-top-responsive{
+    display: none;
+}
+
 /* IPAD / SMALLER SCREEN */
 @media screen and (max-width: 1200px) {
     .container {
@@ -432,6 +437,7 @@ button.about#hobbies:hover{
     .b {
        width: auto;
     }
+    
 
 }
 
@@ -460,7 +466,7 @@ button.about#hobbies:hover{
         padding: 5%;
     }
 
-    h1 h2 p{
+    h1 p{
         font-size: 35px;
         text-align: center;
     }
@@ -477,15 +483,27 @@ button.about#hobbies:hover{
     footer{
         text-align: center;
     }
-    .b {
-    display: none;
-     }
+
+    .b{
+        display: none;
+    }
+    .img-top-responsive{
+        object-fit: cover;
+        display: block;
+        margin-left: 40%;
+        margin-right: 60%;
+        margin-bottom: 30px;
+        width:150px;
+        height:150px;
+        
+    }
 
      .wrapper {
         display:contents;
         height:500px;
         text-align: center;
     }
+
   }
 
 
