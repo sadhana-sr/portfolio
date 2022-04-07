@@ -17,7 +17,8 @@ html{
 
 .nav #link-override:hover{
     font-weight: 600;
-    background-color: #FFF6F5;
+    background-color: #FFF;
+    color: #EF6367;
 }
 
 .header {
@@ -99,8 +100,12 @@ mark.hilight{
 
 mark.hilight-exp{
     background: none;
-    font-size: medium;
-    
+    font-size: medium;   
+}
+
+mark#intro{
+    background: none;
+    color: #EF6367;
 }
 
 mark.about-hilight{
@@ -255,7 +260,7 @@ button{
     
 .wrapper {
     display: grid; 
-    grid-template-rows:200px 200px 200px;
+    grid-template-rows:270px 270px 270px;
     grid-template-columns: 200px 200px 200px;
     margin: 0 auto;
     width:800px;
@@ -270,58 +275,37 @@ footer {
     padding: 40px;
 }
 
-.a {
-    grid-column: 1 / 3;
-    grid-row: 2;
-    transition: .5s ease;
-}
 
-.a:hover{
-    box-shadow:
-    6px 6px #000;
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-    transition: .5s ease;
-}
+
+
 
 .b {
+    position: relative;
+    display: inline-flex;
     grid-column: 3 ;
     grid-row: 1 / 3;
+    padding: 30%;
+    float: left;
+
+}
+.b img.img-top {
+    padding: 30%;
+    position: absolute;
+    top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity .2s;
+
+}
+.b:hover img.img-top {
+  opacity: 1;
+  
 }
 
-.b:hover{
-    box-shadow:
-    6px 6px #000;
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-    transition: .5s ease;
-}
 
-.c {
-    grid-column: 1 ;
-    grid-row: 1 ;
-}
-
-.c:hover{
-    box-shadow:
-    6px 6px #000;
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-    transition: .5s ease;
-}
-
-.d {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.d:hover{
-    box-shadow:
-    6px 6px #000;
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-    transition: .5s ease;
-}
 
 .e {
     grid-column: 1 / 3;
@@ -385,7 +369,7 @@ button.about{
     text-decoration: none;
     cursor: default;
     border-width: 0px;
-    background-color: #FFF6F5;
+    background-color: #fff6f500;
     font-family: 'Poppins', sans-serif;
     font-size: medium;
     padding: 1%;
@@ -395,6 +379,13 @@ button.about{
 
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease
+}
+
+.about{
+    cursor: default;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    color: #000;   
 }
 
 button.about:hover{

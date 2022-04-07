@@ -5,6 +5,7 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
       <link rel="stylesheet" href="mystyle.css">
       <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap' rel='stylesheet' type='text/css'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 
       <nav class="navbar" id="nav-bootstrap-overrides">
@@ -27,7 +28,8 @@
         </div>
       </div>
 
-      <script>
+      <script type="text/javascript">
+        
         // When the user scrolls the page, execute myFunction 
         window.onscroll = function() {myFunction()};
         
@@ -37,17 +39,36 @@
           var scrolled = (winScroll / height) * 100;
           document.getElementById("myBar").style.width = scrolled + "%";
         }
+
+        
+        
+        window.onload = function() {
+          var nameArray = ['Sadhana', '/saadh•na/', 'சாதனா'];
+          var numNames = nameArray.length;
+          var index = 0;
+
+        setInterval(()=> {
+          console.log(nameArray[index]);
+          document.getElementById('intro').textContent=nameArray[index];        
+          index = (index + 1) % numNames;
+          }, 1500);}
+
+
         </script>
 
 
         <div class="about-header">
-          <h1 style="text-align: center;"><mark class="hilight" id ="about-me">About Me</mark></h1></div>
-
         <title>About | Sadhana's UX Portfolio</title>
     </head>
-    <body>  
+    <body> 
+      <h1 style="text-align: center;"><mark class="hilight" id ="about-me">About Me</mark></h1></div>
+
       <div class="wrapper" id="wrapper">
         <div class="e">
+          <p style="font-size: medium;">How's it goin'?</p>
+          <h2 style="margin:0px">I'm<mark id="intro">Sadhana</mark>.</h2>
+          <p style="font-size: small; font-weight: 600;color: #00000070;margin-top:5px">SHE/HER/HERS</p><br>
+
           <p style="font-size: small; font-weight: 600;color: #00000070;">EDUCATION</p>
           <button class="about">🎓 M.S. <mark class="about-hilight"><a target="_blank" href="https://www.si.umich.edu/programs/master-science-information">UX Research & Design @ UMSI</mark></a> '22</button><br>
 
@@ -56,24 +77,24 @@
           
           <hr style="border-color: black; width:70%;">
           <p style="font-size: small; font-weight: 600;color: #00000070;">INTERESTS</p>
-          <button class="about">💕 Leveraging technology for social good</button><br>
-          
-          <button class="about">💕 Community-based participatory design</button><br>
-          
-          <button class="about">💕 Visual design systems</button><br>
+          <p class="about">💕 Leveraging technology for social good</p>
+          <p class="about">💕 Community-based participatory design</p>
+          <p class="about">💕 Visual design systems</p>
 
           <hr style="border-color: black; width:70%;">
           <p style="font-size: small; font-weight: 600;color: #00000070;">WHEN I'M NOT WEARING MY DESIGNER HAT</p>
           
-            <a target="_blank" href="https://www.michigantaal.com/"><button class="about" id="hobbies">💃🏽 Dancing</button></a><br>
-            <a target="_blank" href="https://www.instagram.com/sadhana.psd/"><button class="about"id="hobbies">🖌️ Doodling</button></a><br>
-            <a target="_blank" href="https://open.spotify.com/playlist/1DnPwaXAVjZ1bo1nMh1JVA?si=8258b2aaf04342d7"><button class="about"id="hobbies">🎧 Seeking out new music</button></a>
+            <a target="_blank" href="https://www.michigantaal.com/"><button class="about">💃🏽 Dancing</button></a><br>
+            <a target="_blank" href="https://www.instagram.com/sadhana.psd/"><button class="about">🖌️ Drawing</button></a><br>
+            <a target="_blank" href="https://open.spotify.com/playlist/1DnPwaXAVjZ1bo1nMh1JVA?si=8258b2aaf04342d7"><button class="about">🎧 Seeking out new music</button></a>
         <br>
             
         </div>
-        <img class="b" src="images/about-images/macinack-sadhana-crop.png">
-            
-      </div>
+        <div class="b">
+        <img src="images/about-images/headshot-sadhana-ramaseshadri.png">
+        <img class="img-top" src="images/about-images/headshot-sadhana-ramaseshadri copy.png">
+        </div>
+      </div><br>
 
 
 
